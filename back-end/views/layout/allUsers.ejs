@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+           
+            <th scope="col">E Posta</th>
+            <th scope="col">Nick</th>
+            <th scope="col">Sil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% allUser.forEach(element => { %>
+          <tr>
+          
+          
+            <td class="align-middle"><%= element.mail %></td>
+            <td class="align-middle"><%= element.nick %></td>
+
+            <td class="align-middle"> 
+              <form  action="all-users/<%=element._id %>"  method="post">
+                <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash text-white"  aria-hidden="true"></i>
+
+              </form>
+              </button>  
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
