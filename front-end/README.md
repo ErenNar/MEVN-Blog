@@ -1,4 +1,4 @@
-# MERN-BLOG
+# MEVN-BLOG
 
 ## Build Setup
 
