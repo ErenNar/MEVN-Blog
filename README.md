@@ -7,5 +7,7 @@ npm run dev
 cd back-end
 npm i 
 npm start
+mail: admin@hotmail.com
+password: admin
 
 
